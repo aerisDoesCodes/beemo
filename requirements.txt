@@ -1,0 +1,9 @@
+cleverbot
+xkcd
+discord.py[voice]
+youtube-dl
+aioredis
+redis
+pyfiglet
+wolframalpha
+praw
