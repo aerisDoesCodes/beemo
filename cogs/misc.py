@@ -47,6 +47,16 @@ class Misc(object):
         image_url = image_url["file"]
 
         await self.bot.say(image_url)
+        
+    @commands.command()
+    async def dog(self):
+        """Woof!"""
+        resp = await self.session.get("https://random.dog/woof.json")
+        image_url = await resp.json()
+        resp.close()
+        image_url = image_url["url"]
+
+        await self.bot.say(image_url)
 
     @commands.command()
     async def xkcd(self, *, xkcd_id : int = None):
